@@ -12,13 +12,18 @@ final class PropertyRecommendations extends Component
 {
     /** @var array<string, mixed> */
     public array $criteria = [];
+
     /** @var list<array<string, mixed>> */
     public array $candidates = [];
+
     /** @var list<array<string, mixed>> */
     public array $recommendations = [];
+
     /** @var list<int|string> */
     public array $excludedIds = [];
+
     public int $limit = 6;
+
     public ?string $error = null;
 
     /** @param array<string, mixed> $criteria @param list<array<string, mixed>> $candidates @param list<int|string> $excludedIds */
